@@ -15,92 +15,132 @@
 		<meta name="keywords" content="html, course, css, tags, summary" />
 		<!--Это просто базовое описание которое мы можем видеть в поисковой выдачи  -->
 		<meta name="description" content="Это резюме Селезнёва Дениса" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<!-- У каждого HTML документе присутствует своя структура -->
-		<img
-			src="https://gbcdn.mrgcdn.ru/uploads/avatar/2850515/attachment/thumb-e0af2e906bcd9855908369c7f2759f74.jpg"
-			alt="Денис Селезнёв"
-		/>
-		<h1>Денис Селезнёв</h1>
-		<p>
-			Я не основатель <strong>школ</strong> и <strong>Youtube-каналов</strong> ,
-			а всего го лишь просто
-			<strong>человек</strong>
-		</p>
-		<p>
-			<b>
-				<em>
-					Я люблю учится программированию и очень хочу знать как можно больше, и
-					JS однопоточный не строго типищированный язык, но с него я начну свой
-					путь в сфере IT
-				</em>
-			</b>
-		</p>
-		<!-- Ссылки -->
-		<p>Список сетей</p>
-		<a href="https://github.com/DenisSeleznew" target="_blank">GitHub</a> |
-		<a href="https://vk.com/id44685053" target="_blank">Vkontakte</a>
-		<hr color="red" />
+		<div class="container">
+			<!-- У каждого HTML документе присутствует своя структура -->
+			<header class="info">
+				<section>
+					<img
+						class="info-img"
+						src="https://gbcdn.mrgcdn.ru/uploads/avatar/2850515/attachment/thumb-e0af2e906bcd9855908369c7f2759f74.jpg"
+						alt="Денис Селезнёв"
+					/>
+					<h1>Денис Селезнёв</h1>
+				</section>
 
-		<ol>
-			<h2>Мои Хобби</h2>
-			<li><em>Спорт</em></li>
-			<li><em>Сноуборд</em></li>
-			<li><em>Велопрогулки</em></li>
-		</ol>
+				<section class="info-text">
+					<p>
+						Я не основатель <strong>школ</strong> и
+						<strong>Youtube-каналов</strong> , а всего го лишь просто
+						<strong>человек!</strong>
+					</p>
+					<p>
+						<b>
+							<em>
+								Я люблю учится программированию и очень хочу знать как можно
+								больше, и хоть JS однопоточный не строго типизированный язык, но
+								он тот с него я начну свой путь в сфере IT, а дальше куда кривая
+								заведёт!
+							</em>
+						</b>
+					</p>
+					<!-- Ссылки -->
+					<nav class="info-nav">
+						<p>Список социальных сетей:</p>
 
-		<h2>Опыт работы</h2>
-		<table width="500">
-			<thead>
-				<tr>
-					<th>Название</th>
-					<th>Должность</th>
-					<th>Год</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Охрана</td>
-					<td>ГБР</td>
-					<td>2015-2016</td>
-				</tr>
-				<tr>
-					<td>УФССП</td>
-					<td>Судебный пристав по ОУПДС</td>
-					<td>2016-2020</td>
-				</tr>
-				<tr>
-					<td>Почта России</td>
-					<td>Водитель</td>
-					<td>2021-сейчас</td>
-				</tr>
-			</tbody>
-		</table>
+						<a
+							class="info-nav-link-1"
+							href="https://github.com/DenisSeleznew"
+							target="_blank"
+							><img
+								class="info-nav-img-1"
+								src="img/25231.png"
+								alt="GitHub"
+							/>GitHub</a
+						>
 
-		<h2>Связаться со мной!</h2>
-		<form>
-			<div>
-				<label for="name"><b>Ваше имя:</b></label>
-				<input type="name" id="name" placeholder="Введите ваше имя" />
-			</div>
-			<div>
-				<label for="email"><b>Ваш email:</b></label>
-				<input type="email" id="email" placeholder="Введите ваш email" />
-			</div>
-			<div>
-				<label for="massage"><b>Ваше сообщение:</b></label>
-				<br />
-				<textarea
-					name="massage"
-					id="massage"
-					cols="25"
-					rows="5"
-					placeholder="Ваше сообщение..."
-				></textarea>
-			</div>
-			<button type="submit">Отправить!</button>
-			<button type="reset">Сбросить</button>
-		</form>
+						<a
+							class="info-nav-link-2"
+							href="https://vk.com/id44685053"
+							target="_blank"
+							><img
+								class="info-nav-img-2"
+								src="img/VK_Compact_Logo.png"
+								alt=""
+							/>
+							Vkontakte</a
+						>
+					</nav>
+				</section>
+			</header>
+			<hr color="red" />
+			<article>
+				<section class="card hobby">
+					<ol class="list">
+						<h2>Мои Хобби</h2>
+						<li><em>Спорт</em></li>
+						<li><em>Сноуборд</em></li>
+						<li><em>Велопрогулки</em></li>
+					</ol>
+				</section>
+				<section class="card job">
+					<h2 class="job-header">Опыт работы</h2>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Название</th>
+								<th>Должность</th>
+								<th>Год</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Охрана</td>
+								<td>ГБР</td>
+								<td>2015-2016</td>
+							</tr>
+							<tr>
+								<td>УФССП</td>
+								<td>Судебный пристав по ОУПДС</td>
+								<td>2016-2020</td>
+							</tr>
+							<tr>
+								<td>Почта России</td>
+								<td>Водитель</td>
+								<td>2021-сейчас</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</article>
+			<footer class="footer">
+				<h2>Связаться со мной!</h2>
+				<form>
+					<div class="footer-form footer-form-data">
+						<label for="name"><b>Ваше имя:</b></label>
+						<input type="name" id="name" placeholder="Введите ваше имя" />
+					</div>
+					<div class="footer-form footer-form-data">
+						<label for="email"><b>Ваш email:</b></label>
+						<input type="email" id="email" placeholder="Введите ваш email" />
+					</div>
+					<div class="footer-form">
+						<label for="massage"><b>Ваше сообщение:</b></label>
+						<br />
+						<textarea
+							name="massage"
+							id="massage"
+							cols="25"
+							rows="5"
+							placeholder="Ваше сообщение..."
+						></textarea>
+					</div>
+					<button class="btn" type="submit">Отправить!</button>
+					<button class="btn" type="reset">Сбросить</button>
+				</form>
+			</footer>
+		</div>
 	</body>
 </html>
